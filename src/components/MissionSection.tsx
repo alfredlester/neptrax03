@@ -85,7 +85,7 @@ export default function MissionSection() {
         {/* Left Side — Image */}
         <div className="order-2 lg:order-1">
           <div className="relative group">
-            <div className="rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(37,99,235,0.25)] transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-[0_0_50px_rgba(37,99,235,0.3)]">
+            <div className="rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(37,99,235,0.3)] transition-all duration-500 transform group-hover:scale-[1.03]">
               <img
                 src="/portfolio/jeton.png"
                 alt="Jeton Project"
