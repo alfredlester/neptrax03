@@ -193,27 +193,23 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       <section className="py-20 bg-[#0d1117]">
-        <div className="max-w-7xl mx-auto px-6">
-          <ScrollReveal direction="up" delay={0}>
-            <h2 className="text-4xl font-bold text-[#f1f5f9] text-center mb-12">
-              Our Credentials
-            </h2>
-          </ScrollReveal>
+  <div className="max-w-7xl mx-auto px-6">
+    <h2 className="text-4xl font-bold text-[#f1f5f9] text-center mb-12">
+      Our Credentials
+    </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <ScrollReveal key={index} direction="zoom" delay={index * 100}>
-                <div className="text-center">
-                  <div className="text-5xl font-bold bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-[#94a3b8]">{stat.label}</div>
-                </div>
-              </ScrollReveal>
-            ))}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {stats.map((stat, index) => (
+        <div key={index} className="text-center">
+          <div className="text-5xl font-bold bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent mb-2">
+            {stat.number}
           </div>
+          <div className="text-[#94a3b8]">{stat.label}</div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="py-20 bg-gradient-to-br from-[#0f172a] to-[#1e3a8a]">
         <div className="max-w-4xl mx-auto px-6 text-center">
