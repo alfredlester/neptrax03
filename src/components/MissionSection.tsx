@@ -77,7 +77,7 @@ export default function MissionSection() {
   ];
 
   return (
-<section className="bg-[#28282B] py-24">
+ <section className="bg-[#28282B] py-24">
   <div className="max-w-7xl mx-auto px-6">
     <ScrollReveal>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
