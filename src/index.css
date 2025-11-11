@@ -68,26 +68,49 @@ html {
 
 .reveal {
   opacity: 0;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: blur(4px) brightness(0.8);
+  transition: all 0.9s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity, filter;
 }
 
 .reveal-up {
-  transform: translateY(40px);
+  transform: translateY(60px) translateZ(0);
 }
 
 .reveal-down {
-  transform: translateY(-40px);
+  transform: translateY(-60px) translateZ(0);
 }
 
 .reveal-left {
-  transform: translateX(40px);
+  transform: translateX(60px) translateZ(0);
 }
 
 .reveal-right {
-  transform: translateX(-40px);
+  transform: translateX(-60px) translateZ(0);
+}
+
+.reveal-fade {
+  transform: translateZ(0);
+}
+
+.reveal-zoom {
+  transform: scale(0.85) translateZ(0);
+}
+
+.reveal-depth-light {
+  transform: perspective(1000px) rotateX(5deg);
+}
+
+.reveal-depth-medium {
+  transform: perspective(1000px) rotateX(10deg);
+}
+
+.reveal-depth-heavy {
+  transform: perspective(1000px) rotateX(15deg) translateY(20px);
 }
 
 .reveal-visible {
   opacity: 1;
-  transform: translate(0, 0);
+  filter: blur(0) brightness(1);
+  transform: translate(0, 0) scale(1) rotateX(0) translateZ(0);
 }

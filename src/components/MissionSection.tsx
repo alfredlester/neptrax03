@@ -77,61 +77,62 @@ export default function MissionSection() {
   ];
 
   return (
-<section className="bg-[#28282B] py-24">
-  <div className="max-w-7xl mx-auto px-6">
-    <ScrollReveal>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-
-        {/* Left Side — Image */}
-        <div className="order-2 lg:order-1">
-          <div className="relative group">
-            <div className="rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(37,99,235,0.3)] group">
-              <img
-                src="/portfolio/jeton.png"
-                alt="Jeton Project"
-                className="w-full h-[540px] object-cover transition-all duration-500 group-hover:brightness-110"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </div>
-        </div>
-
-        {/* Right Side — Content */}
-        <div className="order-1 lg:order-2">
-          <h2 className="text-4xl font-bold text-white mb-6 leading-tight">
-            We design experiences that drive results — smarter interfaces,
-            seamless journeys and outcomes that speak themselves.
-          </h2>
-
-          <div className="bg-[#1e293b]/50 rounded-2xl p-8 mb-8 border border-white/10">
-            <p className="text-white text-lg italic mb-4">
-              "Working with Neptrax was a game-changer. The site looks sharp,
-              runs smooth, and made our online presence feel truly professional."
-            </p>
-            <p className="text-[#94a3b8] text-sm">
-              — Ethan Fraser, Founder at TechNest
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-white mb-2">92%</div>
-              <div className="text-white/80 text-sm">Client Retention</div>
-            </div>
-            <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
-              <div className="text-4xl font-bold text-white mb-2">30+</div>
-              <div className="text-white/80 text-sm">
-                Projects Delivered with Excellence
+    <section className="bg-[#28282B] py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+          <ScrollReveal direction="left" delay={0} depth={2}>
+            <div className="order-2 lg:order-1">
+              <div className="relative group">
+                <div className="rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(37,99,235,0.3)] group">
+                  <img
+                    src="/portfolio/jeton.png"
+                    alt="Jeton Project"
+                    className="w-full h-[540px] object-cover transition-all duration-500 group-hover:brightness-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" delay={150}>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-4xl font-bold text-white mb-6 leading-tight">
+                We design experiences that drive results — smarter interfaces,
+                seamless journeys and outcomes that speak themselves.
+              </h2>
+
+              <div className="bg-[#1e293b]/50 rounded-2xl p-8 mb-8 border border-white/10">
+                <p className="text-white text-lg italic mb-4">
+                  "Working with Neptrax was a game-changer. The site looks sharp,
+                  runs smooth, and made our online presence feel truly professional."
+                </p>
+                <p className="text-[#94a3b8] text-sm">
+                  — Ethan Fraser, Founder at TechNest
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <ScrollReveal direction="zoom" delay={300}>
+                  <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
+                    <div className="text-4xl font-bold text-white mb-2">92%</div>
+                    <div className="text-white/80 text-sm">Client Retention</div>
+                  </div>
+                </ScrollReveal>
+                <ScrollReveal direction="zoom" delay={400}>
+                  <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
+                    <div className="text-4xl font-bold text-white mb-2">30+</div>
+                    <div className="text-white/80 text-sm">
+                      Projects Delivered with Excellence
+                    </div>
+                  </div>
+                </ScrollReveal>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
 
-      </div>
-    </ScrollReveal>
-
-
-        <ScrollReveal delay={200}>
+        <ScrollReveal direction="up" delay={0}>
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent mb-4">
               Website management that's actually enjoyable.
@@ -144,8 +145,8 @@ export default function MissionSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {features.map((feature, index) => (
-            <ScrollReveal key={index} delay={index * 100}>
-              <div className="bg-[#1e293b]/50 rounded-2xl p-6 hover:bg-[#1e3a8a]/30 transition-all border border-white/10 hover:border-[#2563eb]/50 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+            <ScrollReveal key={index} direction="up" delay={index * 100} depth={1}>
+              <div className="bg-[#1e293b]/50 rounded-2xl p-6 hover:bg-[#1e3a8a]/30 transition-all border border-white/10 hover:border-[#2563eb]/50 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)] h-full">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] flex items-center justify-center mb-4">
                   <feature.icon className="text-white" size={24} />
                 </div>
@@ -163,7 +164,7 @@ export default function MissionSection() {
           ))}
         </div>
 
-        <ScrollReveal delay={100}>
+        <ScrollReveal direction="up" delay={0}>
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-white text-center mb-4">
               Why Choose Neptrax?
@@ -174,8 +175,8 @@ export default function MissionSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {benefits.map((benefit, index) => (
-                <ScrollReveal key={index} delay={index * 80} direction="up">
-                  <div className="bg-[#1e293b]/50 rounded-xl p-6 border border-white/10 hover:border-[#2563eb]/50 transition-all">
+                <ScrollReveal key={index} direction="up" delay={index * 80} depth={1}>
+                  <div className="bg-[#1e293b]/50 rounded-xl p-6 border border-white/10 hover:border-[#2563eb]/50 transition-all h-full">
                     <h4 className="text-lg font-bold text-white mb-2">{benefit.title}</h4>
                     <p className="text-[#94a3b8] text-sm leading-relaxed">{benefit.description}</p>
                   </div>
@@ -185,7 +186,7 @@ export default function MissionSection() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={200}>
+        <ScrollReveal direction="zoom" delay={0}>
           <div className="text-center py-20 relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-64 h-64 bg-[#2563eb] rounded-full blur-[100px] opacity-30"></div>
@@ -217,8 +218,8 @@ export default function MissionSection() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={100}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-24">
+          <ScrollReveal direction="left" delay={0} depth={2}>
             <div className="rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(37,99,235,0.3)]">
               <img
                 src="/portfolio/rothys.png"
@@ -226,7 +227,9 @@ export default function MissionSection() {
                 className="w-full h-auto"
               />
             </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="right" delay={150}>
             <div>
               <h2 className="text-4xl font-bold text-white mb-6">
                 About Neptrax
@@ -235,8 +238,8 @@ export default function MissionSection() {
                 Throughout the US, we build websites, boost rankings, and manage your socials so you don't have to. Our solutions are affordable, our support is solid, and yes — we actually answer emails. Whether you're just starting out or upgrading your digital game, Neptrax is the partner that gets things done (without the fluff).
               </p>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );
