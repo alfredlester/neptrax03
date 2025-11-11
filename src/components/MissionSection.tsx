@@ -129,8 +129,6 @@ export default function MissionSection() {
 
       </div>
     </ScrollReveal>
-  </div>
-</section>
 
 
         <ScrollReveal delay={200}>
