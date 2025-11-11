@@ -77,47 +77,61 @@ export default function MissionSection() {
   ];
 
   return (
-    <section className="bg-[#28282B] py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <ScrollReveal>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
-            <div>
-              <h2 className="text-4xl font-bold text-white mb-6 leading-tight">
-                We design experiences that drive results — smarter interfaces, seamless journeys and outcomes that speak themselves.
-              </h2>
+<section className="bg-[#28282B] py-24">
+  <div className="max-w-7xl mx-auto px-6">
+    <ScrollReveal>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
 
-              <div className="bg-[#1e293b]/50 rounded-2xl p-8 mb-8 border border-white/10">
-                <p className="text-white text-lg italic mb-4">
-                  "Working with Neptrax was a game-changer. The site looks sharp, runs smooth, and made our online presence feel truly professional."
-                </p>
-                <p className="text-[#94a3b8] text-sm">
-                  — Ethan Fraser, Founder at TechNest
-                </p>
-              </div>
-
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
-                  <div className="text-4xl font-bold text-white mb-2">92%</div>
-                  <div className="text-white/80 text-sm">Client Retention</div>
-                </div>
-                <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
-                  <div className="text-4xl font-bold text-white mb-2">30+</div>
-                  <div className="text-white/80 text-sm">Projects Delivered with Excellence</div>
-                </div>
-              </div>
+        {/* Left Side — Image */}
+        <div className="order-2 lg:order-1">
+          <div className="relative group">
+            <div className="rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(37,99,235,0.3)] transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-[0_0_80px_rgba(37,99,235,0.45)]">
+              <img
+                src="/portfolio/jeton.png"
+                alt="Jeton Project"
+                className="w-full h-[500px] object-cover"
+              />
             </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          </div>
+        </div>
 
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(37,99,235,0.3)]">
-                <img
-                  src="/portfolio/jeton.png"
-                  alt="Jeton Project"
-                  className="w-full h-[540px] object-cover"
-                />
+        {/* Right Side — Content */}
+        <div className="order-1 lg:order-2">
+          <h2 className="text-4xl font-bold text-white mb-6 leading-tight">
+            We design experiences that drive results — smarter interfaces,
+            seamless journeys and outcomes that speak themselves.
+          </h2>
+
+          <div className="bg-[#1e293b]/50 rounded-2xl p-8 mb-8 border border-white/10">
+            <p className="text-white text-lg italic mb-4">
+              "Working with Neptrax was a game-changer. The site looks sharp,
+              runs smooth, and made our online presence feel truly professional."
+            </p>
+            <p className="text-[#94a3b8] text-sm">
+              — Ethan Fraser, Founder at TechNest
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-white mb-2">92%</div>
+              <div className="text-white/80 text-sm">Client Retention</div>
+            </div>
+            <div className="bg-gradient-to-br from-[#2563eb] to-[#1e3a8a] rounded-xl p-6 text-center">
+              <div className="text-4xl font-bold text-white mb-2">30+</div>
+              <div className="text-white/80 text-sm">
+                Projects Delivered with Excellence
               </div>
             </div>
           </div>
-        </ScrollReveal>
+        </div>
+
+      </div>
+    </ScrollReveal>
+  </div>
+</section>
+
 
         <ScrollReveal delay={200}>
           <div className="text-center mb-16">
