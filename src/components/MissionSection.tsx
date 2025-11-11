@@ -89,7 +89,7 @@ export default function MissionSection() {
               <img
                 src="/portfolio/jeton.png"
                 alt="Jeton Project"
-                className="w-full h-[540px] object-cover"
+                className="w-full h-[540px] object-cover transition-all duration-500 group-hover:brightness-110"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
