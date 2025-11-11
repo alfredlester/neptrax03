@@ -112,7 +112,7 @@ export default function MissionSection() {
                 <img
                   src="/portfolio/jeton.png"
                   alt="Jeton Project"
-                  className="w-full h-auto"
+                  className="w-full h-full"
                 />
               </div>
             </div>
