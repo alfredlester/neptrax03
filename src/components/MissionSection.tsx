@@ -112,7 +112,7 @@ export default function MissionSection() {
                 <img
                   src="/portfolio/jeton.png"
                   alt="Jeton Project"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[550px] object-cover"
                 />
               </div>
             </div>
