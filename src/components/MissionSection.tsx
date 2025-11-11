@@ -85,6 +85,7 @@ export default function MissionSection() {
         {/* Left Side — Image */}
         <div className="order-2 lg:order-1">
           <div className="relative group">
+            
               <img
                 src="/portfolio/jeton.png"
                 alt="Jeton Project"
